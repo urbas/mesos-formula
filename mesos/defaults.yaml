@@ -1,0 +1,19 @@
+mesos:
+  version: 1.1.0
+  archive_md5: ff89748a6668425d462dcaa12608cf8a
+  prefix: /usr/lib
+  lookup:
+    Debian:
+      package_dependencies:
+        - autoconf
+        - libtool
+        - build-essential
+        - python-dev
+        - libcurl4-nss-dev
+        - libsasl2-dev
+        - libsasl2-modules
+        - maven
+        - libapr1-dev
+        - libsvn-dev
+        - zlib1g-dev
+        - openjdk-8-jdk
