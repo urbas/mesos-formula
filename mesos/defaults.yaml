@@ -4,16 +4,30 @@ mesos:
   prefix: /usr/lib
   lookup:
     Debian:
-      package_dependencies:
-        - autoconf
-        - libtool
-        - build-essential
-        - python-dev
-        - libcurl4-nss-dev
-        - libsasl2-dev
-        - libsasl2-modules
-        - maven
-        - libapr1-dev
-        - libsvn-dev
-        - zlib1g-dev
-        - openjdk-8-jdk
+        default:
+          package_dependencies:
+            - autoconf
+            - libtool
+            - openjdk-8-jdk
+            - build-essential
+            - python-dev
+            - libcurl4-nss-dev
+            - libsasl2-dev
+            - libsasl2-modules
+            - maven
+            - libapr1-dev
+            - libsvn-dev
+            - zlib1g-dev
+        14.04:
+          package_dependencies:
+            - autoconf
+            - libtool
+            - openjdk-7-jdk
+            - build-essential
+            - python-dev
+            - libcurl4-nss-dev
+            - libsasl2-dev
+            - libsasl2-modules
+            - maven
+            - libapr1-dev
+            - libsvn-dev

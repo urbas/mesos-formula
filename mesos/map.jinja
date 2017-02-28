@@ -1,7 +1,8 @@
 {% import_yaml "mesos/defaults.yaml" as defaults %}
 {% set config = salt['pillar.get']('mesos', default=defaults['mesos'], merge=True) %}
 
-{% set lookup = salt['grains.filter_by'](config['lookup'], merge=salt['pillar.get']('mesos:lookup'), default='Debian') %}
+{% set os_family_lookup = salt['grains.filter_by'](config['lookup'], merge=salt['pillar.get']('mesos:lookup'), default='Debian') %}
+{% set osrelease_lookup = salt['grains.filter_by'](os_family_lookup, grain='osrelease', default='default') %}
 
 {% do config.update({
   'archive_url': 'http://www.apache.org/dist/mesos/%s/mesos-%s.tar.gz'|format(config.version, config.version),
