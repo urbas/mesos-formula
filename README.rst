@@ -1,10 +1,9 @@
 mesos
 =====
 
-.. note::
+See the full `Salt Formulas installation and usage instructions
+<http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
 
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
 
 Available states
 ================
@@ -28,7 +27,9 @@ Installs the server configuration and enables and starts Mesos.
 Deploying a cluster
 ===================
 
-Choose some masters and agents for your Mesos cluster. Say you want to configure masters ``'my-mesos-master-1'``, ``'my-mesos-master-2'``, and so on. Say you also want to configure agents ``'my-mesos-agent-1'``, ``'my-mesos-agent-2'``, and so on.
+Choose some masters and agents for your Mesos cluster. Say you want to configure masters ``'my-mesos-master-1'``,
+``'my-mesos-master-2'``, and so on. Say you also want to configure agents ``'my-mesos-agent-1'``,
+``'my-mesos-agent-2'``, and so on.
 
 You can provide a pillar which identifies the masters and agents of your cluster:
 
