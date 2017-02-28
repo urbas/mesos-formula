@@ -13,14 +13,14 @@ Available states
 
 
 ``mesos``
-----------
+---------
 
 Downloads, builds, and installs and configures Mesos. This takes quite a while (it took 40 minutes on a machine with
 i5-3470 CPU @ 3.20GHz and 16 GB of memory).
 
 
 ``mesos.service``
-------------------
+-----------------
 
 Installs the server configuration and enables and starts Mesos.
 
